@@ -9,7 +9,7 @@
 <div align="center">
   <a href="README_EN.md"><img alt="English README" src="https://img.shields.io/badge/README-English-4d6bfe"/></a>
   <a href="CATALOG.md"><img alt="完整目录" src="https://img.shields.io/badge/%E5%AE%8C%E6%95%B4%E7%9B%AE%E5%BD%95-CATALOG.md-4d6bfe"/></a>
-  <a href="https://dengzhe-hou.github.io/research-writing-prompts/"><img alt="在线版" src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E7%89%88-%E6%90%9C%E7%B4%A2%E4%B8%8E%E5%A4%8D%E5%88%B6-2ea44f"/></a>
+  <a href="https://dengzhe-hou.github.io/Research-Writing-Prompts/"><img alt="在线版" src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E7%89%88-%E6%90%9C%E7%B4%A2%E4%B8%8E%E5%A4%8D%E5%88%B6-2ea44f"/></a>
   <br>
   <a href="CATALOG.md"><img alt="场景: 25" src="https://img.shields.io/badge/%E5%9C%BA%E6%99%AF-25-4d6bfe"/></a>
   <a href="CATALOG.md"><img alt="候选模板: 46" src="https://img.shields.io/badge/%E5%80%99%E9%80%89%E6%A8%A1%E6%9D%BF-46-4d6bfe"/></a>
@@ -35,7 +35,7 @@
 写论文时常做的 25 类任务，每类都有一条首选 prompt，全部在第 4 节，点开即可复制。所有 prompt 都是纯文本，ChatGPT、Claude、Gemini、DeepSeek、Kimi 都能用。多数整理或改编自公开项目，每条都标了出处和许可。
 
 > [!NOTE]
-> [完整目录](CATALOG.md)里有 46 个候选模板，包括多数场景的替代写法。同一候选里有几条短 prompt 的，按需挑一条用。也可以直接用[在线版](https://dengzhe-hou.github.io/research-writing-prompts/)，支持搜索、分类筛选和一键复制。
+> [完整目录](CATALOG.md)里有 46 个候选模板，包括多数场景的替代写法。同一候选里有几条短 prompt 的，按需挑一条用。也可以直接用[在线版](https://dengzhe-hou.github.io/Research-Writing-Prompts/)，支持搜索、分类筛选和一键复制。
 
 ## 2. 30 秒选一条
 
@@ -64,7 +64,7 @@
 
 ## 3. 怎么用
 
-1. 在第 4 节找到你的任务，点开，用代码块右上角的按钮复制；也可以从[在线版](https://dengzhe-hou.github.io/research-writing-prompts/)搜索后复制。
+1. 在第 4 节找到你的任务，点开，用代码块右上角的按钮复制；也可以从[在线版](https://dengzhe-hou.github.io/Research-Writing-Prompts/)搜索后复制。
 2. 粘贴到大模型的对话框，把方括号里的提示（如 `[在此处粘贴你的中文草稿]`）换成你的内容。
 3. 把 `【你的领域，如计算机科学、心理学】` 和 `【目标期刊或会议】` 换成你的领域和投稿目标，例如“认知神经科学”和“NeuroImage”。
 4. 需要逐处核对改动时，在 Input 末尾单独加一行 `MODE: diff`。2.x 润色和 3.x 缩写/扩写支持这个模式，会输出 unified diff 而不是整段重写。

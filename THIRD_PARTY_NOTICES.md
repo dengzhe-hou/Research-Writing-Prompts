@@ -37,7 +37,7 @@ Look et al. in its footer.
 
 If you own one of the unlicensed upstream collections and want an entry removed,
 or want a specific license and attribution format applied, please open an issue
-at <https://github.com/dengzhe-hou/research-writing-prompts/issues>. We will
+at <https://github.com/dengzhe-hou/Research-Writing-Prompts/issues>. We will
 remove or update the entry promptly.
 
 ## What "adapted" means

@@ -9,7 +9,7 @@
 <div align="center">
   <a href="README.md"><img alt="中文 README" src="https://img.shields.io/badge/README-%E4%B8%AD%E6%96%87-4d6bfe"/></a>
   <a href="CATALOG_EN.md"><img alt="Full catalog" src="https://img.shields.io/badge/CATALOG-English-4d6bfe"/></a>
-  <a href="https://dengzhe-hou.github.io/research-writing-prompts/"><img alt="Web version" src="https://img.shields.io/badge/Web%20version-search%20%26%20copy-2ea44f"/></a>
+  <a href="https://dengzhe-hou.github.io/Research-Writing-Prompts/"><img alt="Web version" src="https://img.shields.io/badge/Web%20version-search%20%26%20copy-2ea44f"/></a>
   <br>
   {{badges}}
   <br>
@@ -32,7 +32,7 @@
 Plain-text prompts for the {{scenario_count}} writing tasks that come up most often in research papers, one recommended prompt per task, all in [section 4](#4-prompts). Copy one into ChatGPT, Claude, Gemini, DeepSeek, Kimi or any other chat model. Most are collected or adapted from public projects; every entry names its source and license.
 
 > [!NOTE]
-> The [full catalog](CATALOG_EN.md) has {{candidate_count}} candidate templates, including alternatives for most scenarios. Some candidates contain several short prompts; pick the one that fits. There is also a [web version](https://dengzhe-hou.github.io/research-writing-prompts/) with search, category filters and one-click copy.
+> The [full catalog](CATALOG_EN.md) has {{candidate_count}} candidate templates, including alternatives for most scenarios. Some candidates contain several short prompts; pick the one that fits. There is also a [web version](https://dengzhe-hou.github.io/Research-Writing-Prompts/) with search, category filters and one-click copy.
 
 ## 2. Pick one in 30 seconds
 
@@ -46,7 +46,7 @@ Plain-text prompts for the {{scenario_count}} writing tasks that come up most of
 
 ## 3. How to use
 
-1. Find your task in section 4, open it and use the copy button on the code block, or search the [web version](https://dengzhe-hou.github.io/research-writing-prompts/).
+1. Find your task in section 4, open it and use the copy button on the code block, or search the [web version](https://dengzhe-hou.github.io/Research-Writing-Prompts/).
 2. Paste the prompt into a chat model and replace the bracketed placeholders (for example `[在此处粘贴你的中文草稿]`) with your text.
 3. Replace `【你的领域，如计算机科学、心理学】` and `【目标期刊或会议】` with your field and target venue, for example “cognitive neuroscience” and “NeuroImage”.
 4. To check every edit, add a line `MODE: diff` at the end of the input. The 2.x polishing and 3.x shorten/expand prompts then return a unified diff instead of a full rewrite.
