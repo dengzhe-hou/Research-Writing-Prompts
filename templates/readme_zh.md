@@ -13,7 +13,7 @@
   <br>
   {{badges}}
   <br>
-  <a href="CATALOG.md"><b>完整目录</b> 📖</a> · <a href="#2-30-秒选一条"><b>30 秒选一条</b></a>
+  <a href="CATALOG.md"><b>完整目录</b> 📖</a> · <a href="#2-30-秒选一条"><b>30 秒选一条</b></a> · <a href="https://github.com/dengzhe-hou/Research-Writing-Prompts/issues/new?template=1_submit_prompt.yml"><b>提交 Prompt</b> ✍️</a>
 </div>
 
 ## 目录
@@ -98,7 +98,9 @@
 - `tools/` 下的脚本：**MIT**，见 [LICENSE-CODE](LICENSE-CODE)。
 - 第三方 prompt 的版权归原作者，许可状态逐条见[第三方说明](THIRD_PARTY_NOTICES.md)。本仓库不替第三方内容重新授权。
 
-贡献格式见 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [PR 模板](.github/PULL_REQUEST_TEMPLATE.md)。改 prompt 只需编辑 `data/prompts.yaml`，然后运行：
+有好用的 prompt，欢迎直接[填表提交](https://github.com/dengzhe-hou/Research-Writing-Prompts/issues/new?template=1_submit_prompt.yml)，不用懂 Git。觉得某条效果不好，可以[提改进建议](https://github.com/dengzhe-hou/Research-Writing-Prompts/issues/new?template=2_improve_prompt.yml)。收录或采纳后会在这条 prompt 的来源行和 [CHANGELOG](CHANGELOG.md) 里写上你的 GitHub 用户名。
+
+想自己提 PR 的，格式见 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [PR 模板](.github/PULL_REQUEST_TEMPLATE.md)。改 prompt 只需编辑 `data/prompts.yaml`，然后运行：
 
 ```bash
 python tools/build.py

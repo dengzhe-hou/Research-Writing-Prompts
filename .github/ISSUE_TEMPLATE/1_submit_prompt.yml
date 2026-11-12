@@ -1,0 +1,104 @@
+name: 提交 Prompt / Submit a prompt
+description: 分享一条好用的科研写作 prompt。Share a research-writing prompt that works for you.
+title: "[投稿 / submit] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        谢谢投稿。只有前四项必填，其余可以留空。收录后会在这条 prompt 的来源行和 CHANGELOG 里写上你的 GitHub 用户名。
+
+        Thanks for contributing. Only the first four fields are required. If the prompt is accepted, your GitHub username is credited on its source line and in the CHANGELOG.
+  - type: input
+    id: task
+    attributes:
+      label: 任务 / Task
+      description: 这条 prompt 解决什么写作任务？一句话即可。What writing task does it solve? One sentence.
+      placeholder: "例如 把审稿意见拆成可执行的补实验清单 / e.g. turn reviewer comments into a list of concrete experiments"
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: 完整 Prompt / Full prompt
+      description: 原样粘贴完整 prompt，包括让用户粘贴材料的位置。Paste the complete prompt, including where the user pastes their material.
+      render: text
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Prompt 语言 / Prompt language
+      options:
+        - 中文 / Chinese
+        - 英文 / English
+        - 中英混合 / Mixed
+        - 其他 / Other
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 来源 / Source
+      description: 原始链接；如果是你自己写的，填「自己写的」。Original URL, or "written by me".
+      placeholder: "https://... / 自己写的 / written by me"
+    validations:
+      required: true
+  - type: dropdown
+    id: scenario
+    attributes:
+      label: 对应场景（选填）/ Related scenario (optional)
+      description: 如果它是现有场景的另一种写法，选那个场景。If it is an alternative for an existing scenario, pick it.
+      options:
+        - 新场景 / New scenario
+        - "1.1 中转英"
+        - "2.1 英文润色"
+        - "2.2 中文润色"
+        - "2.3 去 AI 味英文"
+        - "2.4 去 AI 味中文"
+        - "3.1 缩写"
+        - "3.2 扩写"
+        - "3.3 逻辑检查"
+        - "4.1 研究选题"
+        - "4.2 摘要"
+        - "4.3 文献综述"
+        - "4.4 方法"
+        - "4.5 结果与讨论"
+        - "4.6 结论"
+        - "4.7 未来工作"
+        - "4.8 论文标题"
+        - "4.9 相关工作"
+        - "5.1 实验分析"
+        - "5.2 绘图推荐"
+        - "5.3 图标题"
+        - "5.4 表标题"
+        - "5.5 架构图"
+        - "6.1 Reviewer 视角审稿"
+        - "6.2 回复审稿人"
+        - "6.3 投稿信"
+
+  - type: textarea
+    id: why
+    attributes:
+      label: 好在哪里（选填）/ Why it works (optional)
+      description: 和现有 prompt 相比，它解决了什么具体问题？What concrete problem does it fix compared with existing prompts?
+  - type: textarea
+    id: example
+    attributes:
+      label: 示例（选填）/ Example (optional)
+      description: 一段虚构的输入和模型输出。请勿使用未公开的论文或数据。A made-up input and the model's output. Do not use unpublished papers or data.
+      render: text
+  - type: input
+    id: model
+    attributes:
+      label: 测试过的模型（选填）/ Models tested (optional)
+      placeholder: "例如 / e.g. GPT-5.2, Claude Opus 4.5, DeepSeek V4"
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 确认 / Confirm
+      options:
+        - label: 内容不含未公开的论文、数据或他人隐私。It contains no unpublished papers, data or personal information.
+          required: true
+        - label: 如果是我自己写的，同意以 CC BY 4.0 收录。If I wrote it, I agree to release it under CC BY 4.0.
+          required: true

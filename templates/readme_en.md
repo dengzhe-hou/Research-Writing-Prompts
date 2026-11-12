@@ -13,7 +13,7 @@
   <br>
   {{badges}}
   <br>
-  <a href="CATALOG_EN.md"><b>Full catalog</b> 📖</a> · <a href="#2-pick-one-in-30-seconds"><b>Pick one in 30 seconds</b></a>
+  <a href="CATALOG_EN.md"><b>Full catalog</b> 📖</a> · <a href="#2-pick-one-in-30-seconds"><b>Pick one in 30 seconds</b></a> · <a href="https://github.com/dengzhe-hou/Research-Writing-Prompts/issues/new?template=1_submit_prompt.yml"><b>Submit a prompt</b> ✍️</a>
 </div>
 
 ## Contents
@@ -98,7 +98,9 @@ For multi-step work such as literature reviews, drafting a whole paper or rebutt
 - Scripts under `tools/`: **MIT**, see [LICENSE-CODE](LICENSE-CODE).
 - Third-party prompts remain the property of their authors; per-entry status is in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). This repository does not relicense third-party content.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) and the [PR template](.github/PULL_REQUEST_TEMPLATE.md). To change a prompt, edit `data/prompts.yaml` only, then run:
+Have a prompt that works well? [Submit it with a form](https://github.com/dengzhe-hou/Research-Writing-Prompts/issues/new?template=1_submit_prompt.yml), no Git needed. If a prompt misbehaves, [suggest an improvement](https://github.com/dengzhe-hou/Research-Writing-Prompts/issues/new?template=2_improve_prompt.yml). Accepted submissions and adopted suggestions are credited with your GitHub username on the prompt's source line and in the [CHANGELOG](CHANGELOG.md).
+
+To open a PR yourself, see [CONTRIBUTING.md](CONTRIBUTING.md) and the [PR template](.github/PULL_REQUEST_TEMPLATE.md). To change a prompt, edit `data/prompts.yaml` only, then run:
 
 ```bash
 python tools/build.py

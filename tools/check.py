@@ -120,6 +120,15 @@ def main() -> int:
     if site.get("candidate_count") != candidate_total:
         errors.append("docs/prompts.json candidate count mismatch")
 
+    # Issue forms list scenario IDs by hand; keep them in step with the catalog.
+    for form in sorted((ROOT / ".github" / "ISSUE_TEMPLATE").glob("*.yml")):
+        spec = yaml.safe_load(form.read_text(encoding="utf-8"))
+        for field in spec.get("body", []) if isinstance(spec, dict) else []:
+            if field.get("type") == "dropdown" and field.get("id") == "scenario":
+                listed = [o.split()[0] for o in field["attributes"]["options"] if re.fullmatch(r"\d+\.\d+", o.split()[0])]
+                if listed != list(scenario_ids):
+                    errors.append(f"{form.name}: scenario options {listed} != catalog {list(scenario_ids)}")
+
     for required in ("LICENSE", "LICENSE-CODE", "THIRD_PARTY_NOTICES.md", "CONTRIBUTING.md", "CHANGELOG.md", "CITATION.cff"):
         if not (ROOT / required).exists():
             errors.append(f"missing {required}")

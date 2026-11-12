@@ -1,4 +1,4 @@
-name: Bug or bad output
+name: 报错 / Bug or bad output
 description: Report a prompt that fails, a broken link, or a rendering problem.
 title: "[bug] "
 labels: ["bug"]
