@@ -5,6 +5,14 @@ versioned as a whole; individual prompts keep stable numeric IDs.
 
 ## Unreleased
 
+### Added
+
+- Bilingual issue forms for submitting a new prompt and for suggesting an
+  improvement to an existing one; only four fields are required to submit.
+  Submit links in both READMEs, both catalogs and the web version.
+  Contributors are credited on the prompt's source line and in this changelog.
+  `tools/check.py` now fails if a form's scenario list drifts from the catalog.
+
 ### Changed
 
 - Redesigned the static site after the [Look et al.](https://looketal.com)

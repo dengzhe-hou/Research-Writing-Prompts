@@ -4,6 +4,29 @@ Thanks for improving the collection. The most useful contributions are not
 "one more prompt" but a prompt that fixes an observable failure mode, with a
 source and a minimal example.
 
+## Without Git: use a form
+
+- [Submit a prompt / 提交 Prompt](https://github.com/dengzhe-hou/Research-Writing-Prompts/issues/new?template=1_submit_prompt.yml): only the task, the full prompt, its
+  language and its source are required.
+- [Improve a prompt / 改进现有 Prompt](https://github.com/dengzhe-hou/Research-Writing-Prompts/issues/new?template=2_improve_prompt.yml): name the prompt ID and what the
+  model got wrong.
+
+The maintainer checks the source and license, edits `data/prompts.yaml`, and
+links the issue in the PR.
+
+## Credit
+
+Every accepted submission or adopted suggestion is credited with the
+contributor's GitHub username:
+
+- on the prompt's source line (`source_zh` / `source_en`), for example
+  "由 @name 投稿" / "submitted by @name";
+- in `CHANGELOG.md`, next to the change.
+
+When the maintainer turns a form submission into a commit, the commit carries a
+`Co-authored-by:` trailer for the contributor, so it also counts on their
+GitHub profile. Contributors who open their own PR get this automatically.
+
 ## The only source file
 
 Edit `data/prompts.yaml`. Everything else is generated:

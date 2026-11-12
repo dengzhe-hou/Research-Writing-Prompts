@@ -1743,6 +1743,6 @@ python tools/build.py
 python tools/check.py
 ```
 
-贡献格式见 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [PR 模板](.github/PULL_REQUEST_TEMPLATE.md)。
+有好用的 prompt 可以[填表提交](https://github.com/dengzhe-hou/Research-Writing-Prompts/issues/new?template=1_submit_prompt.yml)，觉得某条效果不好可以[提改进建议](https://github.com/dengzhe-hou/Research-Writing-Prompts/issues/new?template=2_improve_prompt.yml)，不用懂 Git。自己提 PR 的格式见 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [PR 模板](.github/PULL_REQUEST_TEMPLATE.md)。
 
 最后更新：2026-11-02

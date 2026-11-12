@@ -1743,6 +1743,6 @@ python tools/build.py
 python tools/check.py
 ```
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) and the [PR template](.github/PULL_REQUEST_TEMPLATE.md).
+[Submit a prompt](https://github.com/dengzhe-hou/Research-Writing-Prompts/issues/new?template=1_submit_prompt.yml) or [suggest an improvement](https://github.com/dengzhe-hou/Research-Writing-Prompts/issues/new?template=2_improve_prompt.yml) with a form, no Git needed. To open a PR yourself, see [CONTRIBUTING.md](CONTRIBUTING.md) and the [PR template](.github/PULL_REQUEST_TEMPLATE.md).
 
 Last updated: 2026-11-02

@@ -1,0 +1,67 @@
+name: 改进现有 Prompt / Improve a prompt
+description: 某条 prompt 效果不好，或者你有更好的改法。A prompt misbehaves, or you have a better wording.
+title: "[改进 / improve] "
+labels: ["improvement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        采纳后会在 CHANGELOG 里写上你的 GitHub 用户名。If your suggestion is adopted, your GitHub username is credited in the CHANGELOG.
+  - type: dropdown
+    id: scenario
+    attributes:
+      label: 哪一条 / Which prompt
+      options:
+        - "1.1 中转英"
+        - "2.1 英文润色"
+        - "2.2 中文润色"
+        - "2.3 去 AI 味英文"
+        - "2.4 去 AI 味中文"
+        - "3.1 缩写"
+        - "3.2 扩写"
+        - "3.3 逻辑检查"
+        - "4.1 研究选题"
+        - "4.2 摘要"
+        - "4.3 文献综述"
+        - "4.4 方法"
+        - "4.5 结果与讨论"
+        - "4.6 结论"
+        - "4.7 未来工作"
+        - "4.8 论文标题"
+        - "4.9 相关工作"
+        - "5.1 实验分析"
+        - "5.2 绘图推荐"
+        - "5.3 图标题"
+        - "5.4 表标题"
+        - "5.5 架构图"
+        - "6.1 Reviewer 视角审稿"
+        - "6.2 回复审稿人"
+        - "6.3 投稿信"
+
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题 / Problem
+      description: 模型实际做错了什么？Describe what the model actually got wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议改法（选填）/ Suggested change (optional)
+      description: 可以只写思路，也可以贴改好的整段。An idea is fine, or paste the revised prompt.
+      render: text
+  - type: input
+    id: model
+    attributes:
+      label: 使用的模型（选填）/ Model used (optional)
+      placeholder: "例如 / e.g. GPT-5.2, Claude Opus 4.5, DeepSeek V4"
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 确认 / Confirm
+      options:
+        - label: 内容不含未公开的论文、数据或他人隐私。It contains no unpublished papers, data or personal information.
+          required: true
